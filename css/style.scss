@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Open+Sans:wght@400;600;700;800&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -22,7 +24,7 @@ a:visited,a:focus {
 }
 
 .intro {
-    @include bgimg("../img/bg.jpg");
+    @include bgimg("../img/bg2.jpg");
     height: 100vh;
     .header {
         padding-top: 47px;
@@ -32,7 +34,6 @@ a:visited,a:focus {
             display: flex;
             .logo {
                 padding-left: 5px;
-                font-family: fantasy;
                 position: relative;
                 &::before {
                     content: "";
@@ -51,14 +52,20 @@ a:visited,a:focus {
                     margin-top: 0;
                     color: $logoclr1;
                     line-height: 16px;
-                    letter-spacing: 1px;
+                    letter-spacing: 0;
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 800;
+                    span {
+                        color: #ececec;
+                    }
                     &:nth-of-type(2) {
                         margin-bottom: 10px;
                     }
                 }
                 &-desc {
+                    font-family: 'Cormorant Garamond', serif;
                     margin-bottom: 0;
-                    color: $logoclr2;
+                    color: #ececec;
                     line-height: 11px;
                     font-weight: 500;
                     font-family: system-ui;
