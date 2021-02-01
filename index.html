@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InLawIntarnetional</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Подключаем jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- JS Plugin ImagesLoaded -->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    
 </head>
 <body>
     <section class="intro">
@@ -47,6 +54,11 @@
             }
         
         window.onload = pre_loader;
+        $('.intro').imagesLoaded( 
+            { background: true }, 
+            function() {
+                $('#background').css('display', 'block')
+        });
         </script>
 </body>
 </html>
