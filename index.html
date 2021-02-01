@@ -9,13 +9,17 @@
 <body>
     <section class="intro">
         <header class="header">
-            <div class="wrapper">
-                <div class="logo">
-                    <h2 class="logo-title logo-item">in<span>law</span></h2>
-                    <h2 class="logo-title logo-item">international</h2>
-                    <h4 class="logo-desc logo-item">КОМПЛЕКСНОЕ</h4>
-                    <h4 class="logo-desc logo-item">ЮРИДИЧЕСКОЕ ОБЕСПЕЧЕНИЕ</h4>
-                    <h4 class="logo-desc logo-item">ВАШЕГО БИЗНЕСА</h4>
+            <div class="wrapper" id="logo-wrapper">
+                <div class="logo" >
+                    <div id="logo-title">
+                        <h2 class="logo-title logo-item">in<span>law</span></h2>
+                        <h2 class="logo-title logo-item">international</h2>
+                    </div>
+                    <div id="logo-desc">
+                        <h4 class="logo-desc logo-item">КОМПЛЕКСНОЕ</h4>
+                        <h4 class="logo-desc logo-item">ЮРИДИЧЕСКОЕ ОБЕСПЕЧЕНИЕ</h4>
+                        <h4 class="logo-desc logo-item">ВАШЕГО БИЗНЕСА</h4>
+                    </div>
                 </div>
                 <nav class="header-links">
                    <a href="" class="header-links-iten"></a>
@@ -26,5 +30,23 @@
             </div>
         </header>
     </section>
+    <script>
+        let logo_wrapper = document.getElementById("logo-wrapper"),
+            logo_title = document.getElementById("logo-title"),
+            logo_desc = document.getElementById("logo-desc");
+
+        function width_logo(item) {
+                item.style.width = '250px';
+                }
+
+        function pre_loader() {
+            logo_wrapper.style.height = '96px';
+
+            setTimeout(width_logo, 400, logo_title);
+            setTimeout(width_logo, 700, logo_desc);
+            }
+        
+        window.onload = pre_loader;
+        </script>
 </body>
 </html>

@@ -32,13 +32,22 @@ a:visited,a:focus {
         margin: 0 auto;
         .wrapper {
             display: flex;
+            height: 0;
+            overflow: hidden;
+            transition: 0.7s ease-in-out;
+            white-space: nowrap;
             .logo {
                 padding-left: 5px;
                 position: relative;
+                div {
+                    transition: 0.7s ease-in-out;
+                    width: 1%;
+                    overflow: hidden;
+                }
                 &::before {
                     content: "";
                     position: absolute;
-                    left: -3px;
+                    left: 1px;
                     top: -1.6px;
                     bottom: -2px;
                     width: 3px;
@@ -59,7 +68,7 @@ a:visited,a:focus {
                         color: #ececec;
                     }
                     &:nth-of-type(2) {
-                        margin-bottom: 10px;
+                        margin-bottom: 2px;
                     }
                 }
                 &-desc {
@@ -69,6 +78,9 @@ a:visited,a:focus {
                     line-height: 11px;
                     font-weight: 500;
                     font-family: system-ui;
+                    &:last-of-type {
+                        padding-bottom: 2px;
+                    }
                 }
             }
         }
