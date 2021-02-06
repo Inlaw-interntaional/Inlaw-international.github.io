@@ -10,43 +10,46 @@ body {
 
 a, a:hover, a:active,
 a:visited, a:focus {
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 
-.intro {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../img/bg2.jpg");
-  height: 100vh;
+.header {
+  padding-top: 47px;
+  padding-bottom: 10px;
+  transition: 1s;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
-.intro .header {
-  padding-top: 47px;
+.header .wrapper {
+  display: flex;
+  align-items: center;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.7s ease-in-out;
+  white-space: nowrap;
   width: 90%;
   margin: 0 auto;
 }
 
-.intro .header .wrapper {
-  display: flex;
-  height: 0;
-  overflow: hidden;
-  transition: 0.7s ease-in-out;
-  white-space: nowrap;
-}
-
-.intro .header .wrapper .logo {
+.header .wrapper .logo {
   padding-left: 5px;
   position: relative;
+  transition: 1s;
+  transform: scale(1);
 }
 
-.intro .header .wrapper .logo div {
-  transition: 0.7s ease-in-out;
+.header .wrapper .logo div {
+  transition: width 0.7s ease-in-out;
   width: 1%;
   overflow: hidden;
 }
 
-.intro .header .wrapper .logo::before {
+.header .wrapper .logo::before {
   content: "";
   position: absolute;
   left: 1px;
@@ -56,37 +59,106 @@ a:visited, a:focus {
   background-color: #1B62A1;
 }
 
-.intro .header .wrapper .logo-item {
+.header .wrapper .logo-item {
   text-transform: uppercase;
   margin: 7px;
 }
 
-.intro .header .wrapper .logo-title {
+.header .wrapper .logo-title {
   margin-top: 0;
   color: #1B62A1;
   line-height: 16px;
   letter-spacing: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
 }
 
-.intro .header .wrapper .logo-title span {
+.header .wrapper .logo-title span {
   color: #ececec;
 }
 
-.intro .header .wrapper .logo-title:nth-of-type(2) {
+.header .wrapper .logo-title:nth-of-type(2) {
   margin-bottom: 2px;
 }
 
-.intro .header .wrapper .logo-desc {
-  font-family: 'Cormorant Garamond', serif;
+.header .wrapper .logo-desc {
+  font-family: "Cormorant Garamond", serif;
   margin-bottom: 0;
   color: #ececec;
   line-height: 11px;
   font-weight: 500;
-  font-family: system-ui;
 }
 
-.intro .header .wrapper .logo-desc:last-of-type {
+.header .wrapper .logo-desc:last-of-type {
   padding-bottom: 2px;
+}
+
+.header.headermove {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: rgba(0, 0, 0, 0.95);
+  border-bottom: 2px solid #539BD6;
+}
+
+.header.headermove .wrapper {
+  height: 63px;
+}
+
+.header.headermove .wrapper .logo {
+  transform: scale(0.6);
+}
+
+.header-links {
+  margin-left: 150px;
+}
+
+.header-links-item {
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 10px;
+  font-family: "Open Sans", sans-serif;
+  transition: 0.4s;
+}
+
+.header-links-item:hover {
+  color: #237FD1;
+  text-decoration: underline;
+}
+
+.intro {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/bg2.jpg");
+  height: 100vh;
+  filter: brightness(130%);
+}
+
+.intro .overlay {
+  background-image: url(../img/overlay.png);
+  background-repeat: repeat;
+  background-size: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.welcome {
+  background-color: #fff;
+  height: 400px;
+  color: #4c4c4c;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.welcome-title {
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.welcome-desc {
+  font-weight: 600;
 }
