@@ -8,6 +8,12 @@ body {
   box-sizing: border-box;
 }
 
+.clear-fix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 a, a:hover, a:active,
 a:visited, a:focus {
   color: #fff;
@@ -22,7 +28,7 @@ a:visited, a:focus {
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 10002;
 }
 
 .header .wrapper {
@@ -122,7 +128,6 @@ a:visited, a:focus {
 
 .header-links-item:hover {
   color: #237FD1;
-  text-decoration: underline;
 }
 
 .intro {
@@ -134,7 +139,7 @@ a:visited, a:focus {
 }
 
 .intro .overlay {
-  background-image: url(../img/overlay.png);
+  background-image: url("../img/overlay.png");
   background-repeat: repeat;
   background-size: 4px;
   position: absolute;
@@ -147,8 +152,7 @@ a:visited, a:focus {
 
 .welcome {
   background-color: #fff;
-  height: 400px;
-  color: #4c4c4c;
+  color: #202020;
   font-family: "Open Sans", sans-serif;
   text-align: center;
 }
@@ -161,4 +165,182 @@ a:visited, a:focus {
 
 .welcome-desc {
   font-weight: 600;
+  padding-bottom: 37px;
+  position: relative;
+}
+
+.welcome-desc::after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: #7a7a7a;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.welcome .wrapper {
+  position: relative;
+}
+
+.welcome .wrapper .wrap_info {
+  width: 600px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 10001;
+}
+
+.welcome .wrapper .wrap_info .wel_inf-title {
+  font-size: 36px;
+  color: black;
+  text-align: center;
+  margin-top: 132px;
+}
+
+.welcome .wrapper .wrap_info .wel_inf-txt {
+  width: 90%;
+  margin: 37px auto 0;
+}
+
+.welcome .wrapper .wrap_info .wel_inf-txt p {
+  color: #000;
+}
+
+.welcome .wrapper .wrap_info .wel_inf-btn {
+  width: 264px;
+  height: 66px;
+  background: #529ad5;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  border: 1px solid #529ad5;
+  border-radius: 3px;
+  text-decoration: none;
+  line-height: 64px;
+  transition: all 0.3s;
+  margin: 0 auto;
+  margin-top: 36px;
+}
+
+.welcome .wrapper .wrap_info .wel_inf-btn:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.welcome .wrapper .overlay {
+  background-image: url("../img/overlay.png");
+  background-repeat: repeat;
+  background-size: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.welcome .wrapper .overlay {
+  z-index: 10000;
+}
+
+.welcome .wrapper .slider .slick-list {
+  overflow: hidden;
+}
+
+.welcome .wrapper .slider .slick-list .slick-track {
+  display: flex;
+}
+
+.welcome .wrapper .slider .slick-list .slick-track .slider_item {
+  width: 100%;
+  height: 750px;
+  overflow: hidden;
+}
+
+.welcome .wrapper .slider .slick-list .slick-track .slider_item img {
+  width: 100%;
+}
+
+.contact-us .welcome-desc {
+  font-weight: 100;
+}
+
+.footer {
+  height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/sud.jpg");
+  background-position-y: center;
+  filter: brightness(50%);
+  background-size: cover;
+  position: relative;
+}
+
+.footer .overlay {
+  background-image: url("../img/overlay.png");
+  background-repeat: repeat;
+  background-size: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.footer .overlay {
+  z-index: 1;
+}
+
+.footer .wrapper .top_cont {
+  position: relative;
+  z-index: 2;
+  width: 720px;
+  padding-top: 77px;
+  margin: 0 auto;
+}
+
+.footer .wrapper .top_cont .map_addr {
+  font-size: 16px;
+  color: #fefefe;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-left: 19px;
+  float: left;
+  margin-right: 40px;
+}
+
+.footer .wrapper .top_cont .map_phone {
+  font-size: 16px;
+  color: #fefefe;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-left: 23px;
+  float: left;
+  margin-right: 40px;
+}
+
+.footer .wrapper .top_cont .map_fax {
+  font-size: 16px;
+  color: #fefefe;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-left: 23px;
+  float: left;
+}
+
+@media (max-width: 500px) {
+  .welcome-title {
+    font-size: 27px;
+  }
 }

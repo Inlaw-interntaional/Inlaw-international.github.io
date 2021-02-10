@@ -12,9 +12,12 @@
     <!-- JS Plugin ImagesLoaded -->
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
-    <!-- Паралакс эффект-->
-    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
-    
+    <!-- Покдлючаем слайдер Slick -->
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <!-- Покдлючаем слайдер Slick -->
+    <script type="text/javascript" src="js/main.js"></script>
+
 </head>
 <body>
     <header class="header ">
@@ -42,10 +45,51 @@
         <div class="overlay"></div>
     </section>
     <section class="welcome">
-        <h2 class="welcome-title">Ласкаво Просимо до INLAW INTERNATIONAL</h2>
-        <p class="welcome-desc">юридичної фірми</p>
+        <div class="welcome-text">
+            <h2 class="welcome-title">Ласкаво Просимо до INLAW INTERNATIONAL</h2>
+            <p class="welcome-desc">юридичної фірми</p>
+        </div>
+        <div class="wrapper">
+            <div class="wrap_info">
+                <div class="wel_inf-title">Працюйте тільки з професіоналами</div>
+					<div class="wel_inf-txt ">
+						<p>Ми – міжнародна юридична компанія LEXLIGA, що з 2010 року практикує у комплексному юридичному супроводі бізнесу різних індустрій та приватних осіб.</p>
+						<p>Ми надаємо професійні юридичні послуги у Києві, в Україні та цілому світу.</p>
+						<p>Для того, щоб знайти індивідуальний підхід до кожного клієнта, наша компанія об’єднала юристів, які вузько спеціалізуються на конкретних галузях права та бізнесу, а також конкретних практиках юрисдикцій інших держав, таких як: Турція, Азербайджан, Греція, Італія, Австрія, Словакія та інших.</p>
+						<a href="/ua/o-nas" class="wel_inf-btn">Детальніше</a>
+					</div>  
+            </div>
+            <div class="overlay"></div>
+            <div class="slider">
+                <div class="slider_item">
+                    <img src="./img/2.jpg" alt="">
+                </div>
+                <div class="slider_item">
+                    <img src="./img/4.jpg" alt="">
+                </div>
+                <div class="slider_item">
+                    <img src="./img/3.jpg" alt="">
+            </div>
+        </div>
     </section>
 
+    <section class="welcome contact-us">
+        <div class="welcome-text">
+            <h2 class="welcome-title">Зв'яжіться з нами</h2>
+            <p class="welcome-desc">Якщо Ви бажаєте, щоб ми зв'язались з Вами, заповніть форму нижче.</p>
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="wrapper">
+            <!-- <div class="top_cont ">
+                <div class="map_addr">03067, Україна, м.Київ, вул.Гарматна, 8</div>
+                <div class="map_phone">+380442273827</div>
+                <div class="map_fax">+380442273827</div>
+            </div> -->
+        </div>
+        <div class="overlay"></div>
+    </footer>
     <!-- Лого анимация -->
     <script>
         var logo_wrapper = document.getElementById("logo-wrapper"),
@@ -84,10 +128,6 @@
                 $(".header").removeClass("headermove");
             }
         });
-    </script>
-    <script>
-        var image = document.getElementsByClassName('intro');
-        new simpleParallax(image);
     </script>
 </body>
 </html>
