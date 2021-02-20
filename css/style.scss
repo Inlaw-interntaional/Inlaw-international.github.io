@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Open+Sans:wght@400;600;700;800&display=swap');
-
 body {
     margin: 0;
     padding: 0;
@@ -18,29 +17,34 @@ body {
     }
 }
 
-.clearfix:before, .clearfix:after {
+.clearfix:before,
+.clearfix:after {
     content: " ";
     display: table;
 }
+
 .clearfix:after {
     clear: both;
 }
-.clearfix:before, .clearfix:after {
+
+.clearfix:before,
+.clearfix:after {
     content: " ";
     display: table;
 }
 
 $logoclr1: #1B62A1;
 $logoclr2: #6B6C6E;
-
-$logotitle: 'Open Sans', sans-serif;
-$logodesc: 'Cormorant Garamond', serif;
-
+$logotitle: 'Open Sans',
+sans-serif;
+$logodesc: 'Cormorant Garamond',
+serif;
 @mixin bgimg($bg) {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url($bg);
 }
+
 @mixin overlay() {
     .overlay {
         background-image: url("../img/overlay.png");
@@ -67,8 +71,12 @@ $logodesc: 'Cormorant Garamond', serif;
         transform: translateX(-50%);
     }
 }
-a,a:hover,a:active,
-a:visited,a:focus {
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
     color: #fff;
     text-decoration: none;
 }
@@ -87,7 +95,7 @@ a:visited,a:focus {
         align-items: center;
         height: 0;
         overflow: hidden;
-        transition: height 0.7s ease-in-out ;
+        transition: height 0.7s ease-in-out;
         white-space: nowrap;
         width: 90%;
         margin: 0 auto;
@@ -97,7 +105,7 @@ a:visited,a:focus {
             transition: 1s;
             transform: scale(1);
             div {
-                transition: width 0.7s ease-in-out ;
+                transition: width 0.7s ease-in-out;
                 width: 1%;
                 overflow: hidden;
             }
@@ -108,7 +116,7 @@ a:visited,a:focus {
                 top: -1.6px;
                 bottom: -2px;
                 width: 3px;
-                background-color:$logoclr1;
+                background-color: $logoclr1;
             }
             &-item {
                 text-transform: uppercase;
@@ -143,14 +151,13 @@ a:visited,a:focus {
     &.headermove {
         padding-top: 0;
         padding-bottom: 0;
-        background: rgba(0,0,0,0.95);
+        background: rgba(0, 0, 0, 0.95);
         border-bottom: 2px solid #539BD6;
         .wrapper {
             height: 63px;
             .logo {
                 transform: scale(0.6);
             }
-
         }
     }
     &-links {
@@ -167,9 +174,11 @@ a:visited,a:focus {
         }
     }
 }
+
 .intro {
     @include bgimg("../img/bg2.jpg");
-    height: 100vh;
+    z-index: 0;
+    height: 110vh;
     filter: brightness(130%);
     @include overlay();
 }
@@ -204,7 +213,7 @@ a:visited,a:focus {
             background: #fff;
             cursor: pointer;
             position: relative;
-            margin:0 1.5%;
+            margin: 0 1.5%;
             margin-bottom: 2.5%;
             &-over {
                 display: none;
@@ -219,7 +228,7 @@ a:visited,a:focus {
                 top: 0;
                 left: 0;
                 position: absolute;
-                background: rgba(82,154,213,0.75) url(../img/icons/plus_icon.png) no-repeat center center;
+                background: rgba(82, 154, 213, 0.75) url(../img/icons/plus_icon.png) no-repeat center center;
                 width: 100%;
                 height: 100%;
             }
@@ -245,21 +254,22 @@ a:visited,a:focus {
 
 .welcome {
     background-color: #fff;
-    color: #202020;
+    color: #444;
     font-family: $logotitle;
     text-align: center;
+    position: relative;
     &-title {
         font-size: 45px;
         font-weight: 600;
         margin-bottom: 10px;
+        padding-top: 40px;
     }
     &-desc {
         font-weight: 600;
-        padding-bottom: 37px;
+        padding-bottom: 20px;
         position: relative;
-        @include after-line();
+        // @include after-line();
     }
-
     .wrapper {
         position: relative;
         .wrap_info {
@@ -304,7 +314,7 @@ a:visited,a:focus {
                     background-color: #000;
                 }
             }
-       }
+        }
         @include overlay();
         .overlay {
             z-index: 10000;
@@ -339,6 +349,7 @@ a:visited,a:focus {
         .welcome-desc {
             max-width: 515px;
             margin: 0 auto;
+            padding-bottom: 50px;
             &::after {
                 top: 80px;
             }
@@ -377,7 +388,7 @@ a:visited,a:focus {
             &_name {
                 z-index: 2;
                 position: absolute;
-                top: 0;
+                top: 0px;
                 left: 0;
                 right: 0;
                 margin: 60px 0px 0px;
@@ -426,7 +437,7 @@ a:visited,a:focus {
                 &:hover .att_shapes_name {
                     color: #fff;
                 }
-                &:hover  .shep_svg {
+                &:hover .shep_svg {
                     fill: #000;
                 }
             }
@@ -440,8 +451,13 @@ a:visited,a:focus {
         }
     }
 }
+
 .contact-us {
     .welcome {
+        &-title {
+            border-top: 10px solid #F1F1F1;
+            padding-top: 0;
+        }
         &-desc {
             font-weight: 100;
         }
@@ -449,57 +465,54 @@ a:visited,a:focus {
 }
 
 .footer {
-    height: 400px;
+    height: 150px;
     width: 100%;
-    @include bgimg("../img/sud.jpg");
-    background-position-y: center;
-    filter: brightness(50%);
-    background-size: cover;
     position: relative;
+    padding: 50px 0;
     @include overlay();
-    .overlay  {
-        z-index: 1;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        @include bgimg("../img/sud.jpg");
+        background-position-y: center;
+        filter: brightness(50%);
+        background-size: cover;
+        z-index: -1;
     }
-
+    .overlay {
+        z-index: 0;
+    }
     .wrapper {
-        .top_cont {
-            position: relative;
-            z-index: 2;
-            width: 720px;
-            padding-top: 77px;
-            margin: 0 auto;
-            .map_addr {
-                font-size: 16px;
-                color: #fefefe;
-                position: relative;
-                text-transform: uppercase;
-                font-weight: 400;
-                padding-left: 19px;
-                float: left;
-                margin-right: 40px;
-            }
-            .map_phone {
-                font-size: 16px;
-                color: #fefefe;
-                position: relative;
-                text-transform: uppercase;
-                font-weight: 400;
-                padding-left: 23px;
-                float: left;
-                margin-right: 40px;
-            }
-            .map_fax {
-                font-size: 16px;
-                color: #fefefe;
-                position: relative;
-                text-transform: uppercase;
-                font-weight: 400;
-                padding-left: 23px;
-                float: left;
+        width: 60%;
+        height: 100%;
+        margin: 0 auto;
+        text-align: center;
+        color: #fff;
+        z-index: 1;
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        p {
+            display: flex;
+            align-items: center;
+            font-family: $logotitle;
+            font-size: 17px;
+            margin: 5px 0;
+            img {
+                width: 20px;
+                height: 20px;
+                margin-right: 5px;
             }
         }
     }
 }
+
 @media (max-width: 500px) {
     .welcome {
         &-title {
@@ -507,4 +520,3 @@ a:visited,a:focus {
         }
     }
 }
-
