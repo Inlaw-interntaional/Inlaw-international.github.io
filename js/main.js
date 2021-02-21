@@ -8,6 +8,7 @@ jQuery.ajax({
     }
 }).done(function() {
     logo_animation_full();
+    anchors();
 });
 
 // LOGO animation
@@ -79,15 +80,17 @@ AOS.init();
 
 // Якоря
 
-$(document).ready(function() {
-    var margin = -75; // переменная для контроля докрутки
-    $("a").click(function() { // тут пишите условия, для всех ссылок или для конкретных
-        $("html, body").animate({
-            scrollTop: $($(this).attr("href")).offset().top + margin + "px" // .top+margin - ставьте минус, если хотите увеличить отступ
-        }, {
-            duration: 800, // тут можно контролировать скорость
-            easing: "swing"
+function anchors() {
+    $(document).ready(function() {
+        var margin = -75; // переменная для контроля докрутки
+        $("a").click(function() { // тут пишите условия, для всех ссылок или для конкретных
+            $("html, body").animate({
+                scrollTop: $($(this).attr("href")).offset().top + margin + "px" // .top+margin - ставьте минус, если хотите увеличить отступ
+            }, {
+                duration: 800, // тут можно контролировать скорость
+                easing: "swing"
+            });
+            return false;
         });
-        return false;
     });
-});
+}
