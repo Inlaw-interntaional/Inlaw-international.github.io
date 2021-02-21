@@ -6,6 +6,8 @@ jQuery.ajax({
     success: function(response) {
         document.getElementById('header').innerHTML = response;
     }
+}).done(function() {
+    logo_animation_full();
 });
 
 // LOGO animation
@@ -48,8 +50,6 @@ function logo_animation_full() {
         }
     });
 }
-
-setInterval(logo_animation_full, 1000);
 
 // SLider Слайдер
 $(document).ready(function() {
