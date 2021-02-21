@@ -49,7 +49,7 @@ function logo_animation_full() {
     });
 }
 
-setTimeout(logo_animation_full, 1000);
+setTimeout(logo_animation_full, 1500);
 
 // SLider Слайдер
 $(document).ready(function() {
