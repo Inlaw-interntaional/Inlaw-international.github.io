@@ -10,6 +10,15 @@ jQuery.ajax({
 
 // LOGO animation
 function logo_animation_full() {
+
+    var logo_wrapper = document.getElementById("logo-wrapper"),
+        logo_title = document.getElementById("logo-title"),
+        logo_desc = document.getElementById("logo-desc");
+
+    function width_logo(item) {
+        item.style.width = '228px';
+    }
+
     function pre_loader() {
         logo_wrapper.style.height = '96px';
 
