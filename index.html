@@ -223,45 +223,6 @@
         </div>
         <div class="overlay"></div>
     </footer>
-    <!-- Лого анимация -->
-    <script>
-        var logo_wrapper = document.getElementById("logo-wrapper"),
-            logo_title = document.getElementById("logo-title"),
-            logo_desc = document.getElementById("logo-desc");
-
-        function width_logo(item) {
-            item.style.width = '228px';
-        }
-
-        function pre_loader() {
-            logo_wrapper.style.height = '96px';
-
-            setTimeout(width_logo, 400, logo_title);
-            setTimeout(width_logo, 700, logo_desc);
-        }
-
-        window.onload = pre_loader;
-        $('.intro').imagesLoaded({
-                background: true
-            },
-            function() {
-                $('#background').css('display', 'block')
-            });
-
-        // <!-- Изменение шапки при скроле -->
-        let header = document.getElementsByClassName("header");
-
-
-        window.addEventListener('scroll', function() {
-            if (window.pageYOffset > 0) {
-                logo_wrapper.style.height = '75px';
-                $(".header").addClass("headermove");
-            } else {
-                logo_wrapper.style.height = '96px';
-                $(".header").removeClass("headermove");
-            }
-        });
-    </script>
     <!-- Подключаем плавное появление элементов AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

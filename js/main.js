@@ -8,6 +8,40 @@ jQuery.ajax({
     }
 });
 
+// LOGO animation
+function logo_animation_full() {
+    function pre_loader() {
+        logo_wrapper.style.height = '96px';
+
+        setTimeout(width_logo, 400, logo_title);
+        setTimeout(width_logo, 700, logo_desc);
+    }
+
+    window.onload = pre_loader;
+    $('.intro').imagesLoaded({
+            background: true
+        },
+        function() {
+            $('#background').css('display', 'block')
+        });
+
+    // <!-- Изменение шапки при скроле -->
+    let header = document.getElementsByClassName("header");
+
+
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 0) {
+            logo_wrapper.style.height = '75px';
+            $(".header").addClass("headermove");
+        } else {
+            logo_wrapper.style.height = '96px';
+            $(".header").removeClass("headermove");
+        }
+    });
+}
+
+setTimeout(logo_animation_full, 200);
+
 // SLider Слайдер
 $(document).ready(function() {
     $('.slider').slick({
