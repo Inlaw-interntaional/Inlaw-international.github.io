@@ -1,7 +1,7 @@
 // Шапка сайта - подключение
 // Slider
 jQuery.ajax({
-    url: "header.html",
+    url: "../header.html",
     dataType: "html",
     success: function(response) {
         document.getElementById('header').innerHTML = response;
