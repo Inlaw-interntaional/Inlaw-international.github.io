@@ -272,6 +272,7 @@ a:focus {
     }
     .wrapper {
         position: relative;
+        overflow: hidden;
         .wrap_info {
             width: 600px;
             position: absolute;

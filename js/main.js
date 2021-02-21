@@ -1,3 +1,13 @@
+// Шапка сайта - подключение
+// Slider
+jQuery.ajax({
+    url: "header.html",
+    dataType: "html",
+    success: function(response) {
+        document.getElementById('header').innerHTML = response;
+    }
+});
+
 // SLider Слайдер
 $(document).ready(function() {
     $('.slider').slick({
@@ -15,11 +25,11 @@ $(document).ready(function() {
 });
 
 // Paralax 
-$(document).ready(function(){
+$(document).ready(function() {
     var c1 = new Rellax('.intro', {
-     speed: -6
+        speed: -6
     });
-   });
+});
 
 // Плавное появление AOS
 AOS.init();
@@ -29,12 +39,12 @@ AOS.init();
 $(document).ready(function() {
     var margin = -75; // переменная для контроля докрутки
     $("a").click(function() { // тут пишите условия, для всех ссылок или для конкретных
-       $("html, body").animate({
-          scrollTop: $($(this).attr("href")).offset().top+margin+ "px" // .top+margin - ставьте минус, если хотите увеличить отступ
-       }, {
-          duration: 1600, // тут можно контролировать скорость
-          easing: "swing"
-       });
-       return false;
+        $("html, body").animate({
+            scrollTop: $($(this).attr("href")).offset().top + margin + "px" // .top+margin - ставьте минус, если хотите увеличить отступ
+        }, {
+            duration: 800, // тут можно контролировать скорость
+            easing: "swing"
+        });
+        return false;
     });
- });
+});
