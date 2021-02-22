@@ -52,6 +52,13 @@ function logo_animation_full() {
     });
 }
 
+// Paralax 
+$(document).ready(function() {
+    var c1 = new Rellax('.intro', {
+        speed: -6
+    });
+});
+
 // SLider Слайдер
 $(document).ready(function() {
     $('.slider').slick({
@@ -68,14 +75,7 @@ $(document).ready(function() {
     });
 });
 
-// Paralax 
-$(document).ready(function() {
-    var c1 = new Rellax('.intro', {
-        speed: -6
-    });
-});
-
-// Плавное появление AOS
+// Плавное появление блоков AOS
 AOS.init();
 
 // Якоря
@@ -94,3 +94,11 @@ function anchors() {
         });
     });
 }
+
+jQuery.ajax({
+    url: "../footer.html",
+    dataType: "html",
+    success: function(response) {
+        document.getElementById('footer').innerHTML = response;
+    }
+});
