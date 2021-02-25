@@ -52,12 +52,6 @@ function logo_animation_full() {
     });
 }
 
-// Paralax 
-$(document).ready(function() {
-    var c1 = new Rellax('.intro', {
-        speed: -6
-    });
-});
 
 // SLider Слайдер
 $(document).ready(function() {
@@ -95,6 +89,7 @@ function anchors() {
     });
 }
 
+// Подвал
 jQuery.ajax({
     url: "../footer.html",
     dataType: "html",

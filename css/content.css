@@ -1,3 +1,18 @@
 danyaman {
   color: blue;
 }
+
+.intro {
+  height: 40vh;
+  background-image: none;
+  background-color: #fff;
+}
+
+.info {
+  position: relative;
+  z-index: 1;
+}
+
+.info-usluga {
+  width: 100%;
+}

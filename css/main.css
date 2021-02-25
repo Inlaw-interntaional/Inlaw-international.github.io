@@ -200,13 +200,13 @@ a:focus {
   width: 30%;
   height: 500px;
   border: 1px solid #e5e5e5;
-  float: left;
   display: block;
   background: #fff;
   cursor: pointer;
   position: relative;
   margin: 0 1.5%;
   margin-bottom: 2.5%;
+  overflow: hidden;
 }
 
 .poslugi .areas_block_itm-over {

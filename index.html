@@ -19,12 +19,31 @@
     <!-- Покдлючаем слайдер Slick -->
     <script type="text/javascript" src="js/slick.min.js"></script>
 
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header" id="header">
-
+    <header class="header">
+        <div class="wrapper" id="logo-wrapper">
+            <div class="logo">
+                <div id="logo-title">
+                    <h2 class="logo-title logo-item">in<span>law</span></h2>
+                    <h2 class="logo-title logo-item">international</h2>
+                </div>
+                <div id="logo-desc">
+                    <h4 class="logo-desc logo-item">КОМПЛЕКСНЕ</h4>
+                    <h4 class="logo-desc logo-item">ЮРИДИЧНЕ ЗАБЕЗПЕЧЕННЯ</h4>
+                    <h4 class="logo-desc logo-item">ВАШОГО БІЗНЕСУ</h4>
+                </div>
+            </div>
+            <nav class="header-links">
+                <a href="#o_nas" class="header-links-item">Про нас</a>
+                <a href="#poslugi" class="header-links-item">Послуги</a>
+                <a href="#team" class="header-links-item">Команда</a>
+                <a href="" class="header-links-item">Новини</a>
+                <a href="#contacts" class="header-links-item">Контакти</a>
+            </nav>
+        </div>
     </header>
     <section class="intro">
         <div class="overlay"></div>
@@ -57,22 +76,23 @@
                     <img src="./img/3.jpg" alt="">
                 </div>
             </div>
+        </div>
     </section>
     <section class="welcome contact-us poslugi" id="poslugi">
         <div class="welcome-text">
             <h2 class="welcome-title">НАШІ ПОСЛУГИ</h2>
             <p class="welcome-desc">Основні напрямки діяльності нашої фірми.</p>
         </div>
-        <div class="areas_block">
-            <div class="areas_block_itm" data-aos="fade-left">
-                <a class="practices_link" href="/uslugi/industrii" style="text-decoration: none">
+        <div class="areas_block clearfix">
+            <div number-gallery="#gallery1" class="areas_block_itm open-gallery wow fadeInLeft">
+                <a class="practices_link" href="content/pravove-zabezpechennya-zahistu-b-znesu.html" style="text-decoration: none">
                     <div class="areas_block_itm-over"></div>
                     <div class="areas_block_itm-img"><img src="/img/areas_block1.jpg" height="323" alt=""></div>
                     <div class="areas_block_itm-title">Правове забезпечення захисту бізнесу</div>
                     <div class="areas_block_itm-desc">Мы активны в большинстве индустрий, представленных в Украине, и способны успешно работать в любой сфере бизнеса.</div>
                 </a>
             </div>
-            <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="250" data-aos-delay="200" class="areas_block_itm clearfix">
+            <div number-gallery="#gallery1" class="areas_block_itm open-gallery wow fadeIn" data-wow-delay="0.5s" data-wow-offset="200" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
                 <a class="practices_link" href="/uslugi/praktiki" style="text-decoration: none">
                     <div class="areas_block_itm-over"></div>
                     <div class="areas_block_itm-img"><img src="/img/areas_block2.jpg" height="323" alt=""></div>
@@ -80,7 +100,7 @@
                     <div class="areas_block_itm-desc">Наша фирма состоит из практик, каждая из которых фокусируется на решении задач в своей отрасли права.</div>
                 </a>
             </div>
-            <div data-aos="fade-left" data-aos-duration="1000" data-aos-offset="250" data-aos-delay="400" class="areas_block_itm clearfix">
+            <div number-gallery="#gallery1" class="areas_block_itm open-gallery wow fadeInRight" data-wow-delay="1s" data-wow-offset="200" style="visibility: visible; animation-delay: 1s; animation-name: fadeInRight;">
                 <a class="practices_link" href="/uslugi/uslugi-zarubezhom" style="text-decoration: none">
                     <div class="areas_block_itm-over"></div>
                     <div class="areas_block_itm-img"><img src="/img/areas_block3.jpg" height="323" alt=""></div>
@@ -88,7 +108,7 @@
                     <div class="areas_block_itm-desc">Мы оказываем юридическую поддержку в большинстве стран мира через свои зарубежные партнерские фирмы.</div>
                 </a>
             </div>
-            <div data-aos="fade-up-right" data-aos-duration="1000" data-aos-offset="250" class="areas_block_itm clearfix">
+            <div number-gallery="#gallery1" class="areas_block_itm open-gallery wow fadeInRight" data-wow-delay="1s" data-wow-offset="200" style="visibility: visible; animation-delay: 1s; animation-name: fadeInRight;">
                 <a class="practices_link" href="/uslugi/uslugi-zarubezhom" style="text-decoration: none">
                     <div class="areas_block_itm-over"></div>
                     <div class="areas_block_itm-img"><img src="/img/areas_block3.jpg" height="323" alt=""></div>
@@ -96,7 +116,7 @@
                     <div class="areas_block_itm-desc">Мы оказываем юридическую поддержку в большинстве стран мира через свои зарубежные партнерские фирмы.</div>
                 </a>
             </div>
-            <div data-aos="fade-up-left" data-aos-duration="1000" data-aos-offset="250" data-aos-delay="200" class="areas_block_itm clearfix">
+            <div number-gallery="#gallery1" class="areas_block_itm open-gallery wow fadeInRight" data-wow-delay="1s" data-wow-offset="200" style="visibility: visible; animation-delay: 1s; animation-name: fadeInRight;">
                 <a class="practices_link" href="/uslugi/uslugi-zarubezhom" style="text-decoration: none">
                     <div class="areas_block_itm-over"></div>
                     <div class="areas_block_itm-img"><img src="/img/areas_block3.jpg" height="323" alt=""></div>
@@ -131,7 +151,7 @@
                                 <path class="shep_svg" stroke-width="0" d="m 158.7143,631.05036 0,-67.95468 3.25,-0.5575 c 3.88316,-0.66612 328.36987,-41.53313 329.77568,-41.53313 0.62513,0 0.97432,31.89744 0.97432,89 l 0,89 -167,0 -167,0 0,-67.95469 z"></path>
                             </g>
                         </svg>
-                        <svg width="100%" height="100" style="position: absolute; left: 0px; top: 170px; z-index: 1;" <g="" transform="translate(-158.6543,-655.10505)">
+                        <svg width="100%" height="100" style="position: absolute; left: 0px; top: 170px; z-index: 1;"><g="" transform="translate(-158.6543,-655.10505)">
                                 <path class="shep_svg" stroke-width="0" d="m 158.7143,631.05036 0,-67.95468 3.25,-0.5575 c 3.88316,-0.66612 328.36987,-41.53313 329.77568,-41.53313 0.62513,0 0.97432,31.89744 0.97432,89 l 0,89 -167,0 -167,0 0,-67.95469 z"></path>
                             
                         </svg>
@@ -175,10 +195,11 @@
                                 <path class="shep_svg" stroke-width="0" d="m 158.7143,631.05036 0,-67.95468 3.25,-0.5575 c 3.88316,-0.66612 328.36987,-41.53313 329.77568,-41.53313 0.62513,0 0.97432,31.89744 0.97432,89 l 0,89 -167,0 -167,0 0,-67.95469 z"></path>
                             </g>
                         </svg>
-                        <svg width="100%" height="100" style="position: absolute; left: 0px; top: 170px; z-index: 1;" <g="" transform="translate(-158.6543,-655.10505)">
-                                <path class="shep_svg" stroke-width="0" d="m 158.7143,631.05036 0,-67.95468 3.25,-0.5575 c 3.88316,-0.66612 328.36987,-41.53313 329.77568,-41.53313 0.62513,0 0.97432,31.89744 0.97432,89 l 0,89 -167,0 -167,0 0,-67.95469 z"></path>
-                            
-                        </svg>
+                        <svg width="100%" height="100" style="position: absolute; left: 0px; top: 170px; z-index: 1;"></svg>
+                        <g="" transform="translate(-158.6543,-655.10505)">
+                            <path class="shep_svg" stroke-width="0" d="m 158.7143,631.05036 0,-67.95468 3.25,-0.5575 c 3.88316,-0.66612 328.36987,-41.53313 329.77568,-41.53313 0.62513,0 0.97432,31.89744 0.97432,89 l 0,89 -167,0 -167,0 0,-67.95469 z"></path>
+
+                            </svg>
                     </div>
                 </div>
                 <div class="att_block_itm wow fadeInRight" data-wow-delay="1s" data-wow-offset="200" style="visibility: visible; animation-delay: 1s; animation-name: fadeInRight;">
@@ -195,7 +216,7 @@
                                 <path class="shep_svg" stroke-width="0" d="m 158.7143,631.05036 0,-67.95468 3.25,-0.5575 c 3.88316,-0.66612 328.36987,-41.53313 329.77568,-41.53313 0.62513,0 0.97432,31.89744 0.97432,89 l 0,89 -167,0 -167,0 0,-67.95469 z"></path>
                             </g>
                         </svg>
-                        <svg width="100%" height="100" style="position: absolute; left: 0px; top: 170px; z-index: 1;" <g="" transform="translate(-158.6543,-655.10505)">
+                        <svg width="100%" height="100" style="position: absolute; left: 0px; top: 170px; z-index: 1;"><g="" transform="translate(-158.6543,-655.10505)">
                                 <path class="shep_svg" stroke-width="0" d="m 158.7143,631.05036 0,-67.95468 3.25,-0.5575 c 3.88316,-0.66612 328.36987,-41.53313 329.77568,-41.53313 0.62513,0 0.97432,31.89744 0.97432,89 l 0,89 -167,0 -167,0 0,-67.95469 z"></path>
                             
                         </svg>
@@ -207,8 +228,17 @@
     <div id="footer">
     </div>
 
+    <script>
+        // Paralax 
+        $(document).ready(function() {
+            var c1 = new Rellax('.intro', {
+                speed: -6
+            });
+        });
+    </script>
+
     <!-- Подключаем плавное появление элементов AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Покдлючаем файл скриптов -->
