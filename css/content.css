@@ -8,9 +8,15 @@ danyaman {
   background-color: #fff;
 }
 
+#header {
+  background-color: #000;
+  padding-top: 13px;
+}
+
 .info {
   position: relative;
   z-index: 1;
+  background-color: #150f1d;
 }
 
 .info-usluga {
