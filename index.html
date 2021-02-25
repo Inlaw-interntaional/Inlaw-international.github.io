@@ -301,16 +301,16 @@
                 });
 
             // <!-- Изменение шапки при скроле -->
-            let header = document.getElementsByClassName("header ");
+            let header = document.getElementsByClassName("header");
 
 
             window.addEventListener('scroll', function() {
                 if (window.pageYOffset > 0) {
                     logo_wrapper.style.height = '75px';
-                    $(".header ").addClass("headermove ");
+                    $(".header").addClass("headermove");
                 } else {
                     logo_wrapper.style.height = '96px';
-                    $(".header ").removeClass("headermove ");
+                    $(".header").removeClass("headermove");
                 }
             });
         }
@@ -319,11 +319,11 @@
             $(document).ready(function() {
                 var margin = -75; // переменная для контроля докрутки
                 $("a ").click(function() { // тут пишите условия, для всех ссылок или для конкретных
-                    $("html, body ").animate({
+                    $("html, body").animate({
                         scrollTop: $($(this).attr("href ")).offset().top + margin + "px " // .top+margin - ставьте минус, если хотите увеличить отступ
                     }, {
                         duration: 800, // тут можно контролировать скорость
-                        easing: "swing "
+                        easing: "swing"
                     });
                     return false;
                 });
