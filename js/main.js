@@ -1,15 +1,17 @@
 // Шапка сайта - подключение
 // Slider
-jQuery.ajax({
-    url: "../header.html",
-    dataType: "html",
-    success: function(response) {
-        document.getElementById('header').innerHTML = response;
-    }
-}).done(function() {
-    logo_animation_full();
-    anchors();
-});
+if ($(".header")) {
+    jQuery.ajax({
+        url: "../header.html",
+        dataType: "html",
+        success: function(response) {
+            document.getElementById('header').innerHTML = response;
+        }
+    }).done(function() {
+        logo_animation_full();
+        anchors();
+    });
+};
 
 // LOGO animation
 function logo_animation_full() {
