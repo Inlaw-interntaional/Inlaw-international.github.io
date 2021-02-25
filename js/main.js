@@ -40,7 +40,7 @@ function anchors() {
 
 // Подвал
 jQuery.ajax({
-    url: "../footer.html",
+    url: "../footer.html?2",
     dataType: "html",
     success: function(response) {
         document.getElementById('footer').innerHTML = response;
