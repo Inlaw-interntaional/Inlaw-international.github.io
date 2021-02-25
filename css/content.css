@@ -5,11 +5,10 @@ danyaman {
 .intro {
   height: 40vh;
   background-image: none;
-  background-color: #fff;
+  background-color: #38294c !important;
 }
 
 #header {
-  background-color: #000;
   padding-top: 13px;
 }
 
