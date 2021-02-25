@@ -1,6 +1,6 @@
 // Шапка сайта - подключение
 // Slider
-if ($(".header")) {
+if ($("#header")) {
     jQuery.ajax({
         url: "../header.html",
         dataType: "html",
