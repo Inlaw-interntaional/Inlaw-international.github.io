@@ -9,6 +9,11 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  color: initial;
+  text-decoration: none;
+}
+
 .clear-fix::after {
   content: "";
   display: block;
@@ -243,6 +248,100 @@ a:focus {
   width: 100%;
   margin: 19px auto 0px;
   padding: 0 5px;
+}
+
+span.msg,
+span.choose {
+  color: #555;
+  padding: 5px 0 10px;
+  display: inherit;
+}
+
+/*Styling Selectbox*/
+.dropdown {
+  width: 45px;
+  display: inline-block;
+  background-color: transparent;
+  border-radius: 2px;
+  box-shadow: 0 0 2px #0088ff;
+  transition: all .5s ease;
+  position: relative;
+  font-size: 14px;
+  color: #fff;
+  height: 100%;
+  text-align: left;
+}
+
+.dropdown .select {
+  cursor: pointer;
+  display: block;
+  padding: 2px 7px;
+}
+
+.dropdown .select > i {
+  font-size: 13px;
+  color: #fff;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  float: right;
+  line-height: 20px;
+}
+
+.dropdown.active:hover,
+.dropdown.active,
+.dropdown.active:active,
+.dropdown.active:focus {
+  box-shadow: 0 0 4px #195A94;
+  border-radius: 2px 2px 0 0;
+  background-color: transparent;
+}
+
+.dropdown.active .select > i {
+  transform: rotate(-90deg);
+}
+
+.dropdown .dropdown-menu {
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  left: 0;
+  margin-top: 1px;
+  box-shadow: 0 1px 2px #195A94;
+  border-radius: 0 1px 2px 2px;
+  overflow: hidden;
+  display: none;
+  max-height: 144px;
+  overflow-y: auto;
+  z-index: 9;
+}
+
+.dropdown .dropdown-menu li {
+  padding: 2px 10px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #195A94;
+}
+
+.dropdown .dropdown-menu {
+  padding: 0;
+  list-style: none;
+}
+
+.dropdown .dropdown-menu li:hover {
+  background-color: #0088ff;
+  color: #fff;
+}
+
+.dropdown .dropdown-menu li:active {
+  background-color: #0088ff;
+  color: #fff;
+}
+
+.fixed-dropdown {
+  position: fixed;
+  right: 50px;
+  top: 27px;
+  z-index: 10002;
 }
 
 .welcome {

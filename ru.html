@@ -20,6 +20,92 @@
     <script type="text/javascript" src="js/slick.min.js"></script>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        span.msg,
+span.choose {
+  color: #555;
+  padding: 5px 0 10px;
+  display: inherit
+}
+/*Styling Selectbox*/
+.dropdown {
+  width: 45px;
+  display: inline-block;
+  background-color: transparent;
+  border-radius: 2px;
+  box-shadow: 0 0 2px #0088ff;
+  transition: all .5s ease;
+  position: relative;
+  font-size: 14px;
+  color: #fff;
+  height: 100%;
+  text-align: left
+}
+.dropdown .select {
+    cursor: pointer;
+    display: block;
+    padding: 2px 7px;
+}
+.dropdown .select > i {
+    font-size: 13px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    float: right;
+    line-height: 20px
+}
+.dropdown.active:hover,
+.dropdown.active,
+.dropdown.active:active,
+.dropdown.active:focus {
+    box-shadow: 0 0 4px #195A94;
+    border-radius: 2px 2px 0 0;
+    background-color: transparent
+}
+.dropdown.active .select > i {
+    transform: rotate(-90deg)
+}
+.dropdown .dropdown-menu {
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    left: 0;
+    margin-top: 1px;
+    box-shadow: 0 1px 2px #195A94;
+    border-radius: 0 1px 2px 2px;
+    overflow: hidden;
+    display: none;
+    max-height: 144px;
+    overflow-y: auto;
+    z-index: 9
+}
+.dropdown .dropdown-menu li {
+    padding: 2px 10px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #195A94;
+} 
+.dropdown .dropdown-menu {
+    padding: 0;
+    list-style: none
+}
+.dropdown .dropdown-menu li:hover {
+    background-color: #0088ff;
+    color: #fff;
+}
+.dropdown .dropdown-menu li:active {
+    background-color: #0088ff;
+    color: #fff;
+}
+.fixed-dropdown {
+    position: fixed;
+    right: 50px;
+    top: 27px;
+    z-index: 10002;
+}
+    </style>
+    
 </head>
 
 <body>
@@ -32,52 +118,51 @@
                         <h2 class="logo-title logo-item">international</h2>
                     </div>
                     <div id="logo-desc">
-                        <h4 class="logo-desc logo-item">КОМПЛЕКСНЕ</h4>
-                        <h4 class="logo-desc logo-item">ЮРИДИЧНЕ ЗАБЕЗПЕЧЕННЯ</h4>
-                        <h4 class="logo-desc logo-item">ВАШОГО БІЗНЕСУ</h4>
+                        <h4 class="logo-desc logo-item">COMPLEX</h4>
+                        <h4 class="logo-desc logo-item">LEGAL SECURITY</h4>
+                        <h4 class="logo-desc logo-item">YOUR BUSINESS</h4>
                     </div>
                 </div>
             </a>
             <nav class="header-links">
-                <a href="#o_nas" class="header-links-item">Про нас</a>
-                <a href="#poslugi" class="header-links-item">Послуги</a>
-                <a href="#team" class="header-links-item">Команда</a>
+                <a href="#o_nas" class="header-links-item">ABOUT</a>
+                <a href="#poslugi" class="header-links-item">Services</a>
+                <a href="#team" class="header-links-item">Team</a>
                 <a href="" class="header-links-item">Новини</a>
-                <a href="#contacts" class="header-links-item">Контакти</a>
+                <a href="#contacts" class="header-links-item">Contacts</a>
             </nav>
         </div>
     </header>
     <div class="fixed-dropdown">
         <div class="dropdown">
             <div class="select">
-              <span>UK ↓</span>
+              <span>RU ↓</span>
               <i class="fa fa-chevron-left"></i>
             </div>
             <input type="hidden" name="gender">
             <ul class="dropdown-menu">
-                <a href="ru.html"><li id="male">RU</li></a>
+                <a href="index.html"><li id="male">UK</li></a>
                 <a href="http://beloweb.ru/novichkam/podborka-krutyih-vyipadayushhih-spiskov-rabotayushhih-na-css-i-javascript.html"><li id="female">EN</li></a>
             </ul>
         </div>
     </div>
     <section class="intro">
         <div class="overlay"></div>
-    </section> 
-      
+    </section>
     <section class="welcome first" id="o_nas">
         <div class="welcome-text">
-            <h2 class="welcome-title">Ласкаво Просимо до INLAW INTERNATIONAL</h2>
-            <p class="welcome-desc">юридичної фірми</p>
+            <h2 class="welcome-title">Welcome to INLAW INTERNATIONAL</h2>
+            <p class="welcome-desc">law firm</p>
         </div>
         <div class="wrapper">
             <div class="wrap_info" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="250">
-                <div class="wel_inf-title">Працюйте тільки з професіоналами</div>
-                <div class="wel_inf-txt">
+                <div class="wel_inf-title">Work only with professionals</div>
+                <div class="wel_inf-txt ">
                     <p>Ми – міжнародна юридична компанія LEXLIGA, що з 2010 року практикує у комплексному юридичному супроводі бізнесу різних індустрій та приватних осіб.</p>
                     <p>Ми надаємо професійні юридичні послуги у Києві, в Україні та цілому світу.</p>
                     <p>Для того, щоб знайти індивідуальний підхід до кожного клієнта, наша компанія об’єднала юристів, які вузько спеціалізуються на конкретних галузях права та бізнесу, а також конкретних практиках юрисдикцій інших держав, таких як: Турція,
                         Азербайджан, Греція, Італія, Австрія, Словакія та інших.</p>
-                    <a href="content/onas.html" class="wel_inf-btn">Детальніше</a>
+                    <a href="content/onas.html" class="wel_inf-btn">Read more</a>
                 </div>
             </div>
             <div class="overlay"></div>
@@ -96,15 +181,15 @@
     </section>
     <section class="welcome contact-us poslugi" id="poslugi">
         <div class="welcome-text">
-            <h2 class="welcome-title">НАШІ ПОСЛУГИ</h2>
-            <p class="welcome-desc">Основні напрямки діяльності нашої фірми.</p>
+            <h2 class="welcome-title">OUR SERVICES</h2>
+            <p class="welcome-desc">The main activities of our company.</p>
         </div>
         <div class="areas_block clearfix">
             <div number-gallery="#gallery1" class="areas_block_itm open-gallery wow fadeInLeft">
                 <a class="practices_link" href="content/pravove-zabezpechennya-zahistu-b-znesu.html" style="text-decoration: none">
                     <div class="areas_block_itm-over"></div>
                     <div class="areas_block_itm-img"><img src="/img/areas_block1.jpg" height="323" alt=""></div>
-                    <div class="areas_block_itm-title">Правове забезпечення захисту бізнесу</div>
+                    <div class="areas_block_itm-title">Legal support of business protection</div>
                     <div class="areas_block_itm-desc">Мы активны в большинстве индустрий, представленных в Украине, и способны успешно работать в любой сфере бизнеса.</div>
                 </a>
             </div>
@@ -112,7 +197,7 @@
                 <a class="practices_link" href="content/pravova-bezpeka-ugod-b-znesu.html" style="text-decoration: none">
                     <div class="areas_block_itm-over"></div>
                     <div class="areas_block_itm-img"><img src="/img/areas_block2.jpg" height="323" alt=""></div>
-                    <div class="areas_block_itm-title">Правова безпека угод бізнесу</div>
+                    <div class="areas_block_itm-title">Legal security of business transactions</div>
                     <div class="areas_block_itm-desc">Наша фирма состоит из практик, каждая из которых фокусируется на решении задач в своей отрасли права.</div>
                 </a>
             </div>
@@ -120,7 +205,7 @@
                 <a class="practices_link" href="content/zahist-nteres-v-kl-nta-v-korporativnih-konfl-ktah.html" style="text-decoration: none">
                     <div class="areas_block_itm-over"></div>
                     <div class="areas_block_itm-img"><img src="/img/areas_block3.jpg" height="323" alt=""></div>
-                    <div class="areas_block_itm-title">Захист інтересів клієнта в корпоративних конфліктах</div>
+                    <div class="areas_block_itm-title">Protecting the client's interests in corporate conflicts</div>
                     <div class="areas_block_itm-desc">Мы оказываем юридическую поддержку в большинстве стран мира через свои зарубежные партнерские фирмы.</div>
                 </a>
             </div>
@@ -128,7 +213,7 @@
                 <a class="practices_link" href="content/bezopasnost-reorganizacii-biznesa.html" style="text-decoration: none">
                     <div class="areas_block_itm-over"></div>
                     <div class="areas_block_itm-img"><img src="/img/areas_block3.jpg" height="323" alt=""></div>
-                    <div class="areas_block_itm-title">Безпека реорганізації бізнесу</div>
+                    <div class="areas_block_itm-title">Security of business reorganization</div>
                     <div class="areas_block_itm-desc">Мы оказываем юридическую поддержку в большинстве стран мира через свои зарубежные партнерские фирмы.</div>
                 </a>
             </div>
@@ -136,7 +221,7 @@
                 <a class="practices_link" href="content/pravove-zabezpechennya-zahistu-prav-vlasnika-b-znesu.html" text-decoration: none ">
                     <div class="areas_block_itm-over "></div>
                     <div class="areas_block_itm-img "><img src="/img/areas_block3.jpg " height="323 " alt=" "></div>
-                    <div class="areas_block_itm-title ">Правове забезпечення захисту прав власника бізнесу</div>
+                    <div class="areas_block_itm-title ">Legal protection of business owner's rights</div>
                     <div class="areas_block_itm-desc ">Мы оказываем юридическую поддержку в большинстве стран мира через свои зарубежные партнерские фирмы.</div>
                 </a>
             </div>
@@ -145,11 +230,11 @@
 
     <section class="welcome contact-us poslugi team " id="team ">
         <div class="welcome-text ">
-            <h2 class="welcome-title ">КОМАНДА</h2>
+            <h2 class="welcome-title ">TEAM</h2>
             <p class="welcome-desc ">Ми - висококласні юристи та адвокати, які мають достатній досвід для вирішення юридичних завдань будь-якої складності. Кожен з нас спеціалізується на певному напрямку юридичної практики ..</p>
         </div>
         <div class="wrapper-fbut ">
-            <a href=" " class="wrapper-fbut-link ">Вся команда</a>
+            <a href=" " class="wrapper-fbut-link ">The whole team</a>
         </div>
         <div class="wrapper ">
             <div class="att_block clearfix ">
@@ -252,7 +337,7 @@
     <div>
         <section class="welcome contact-us " id="contacts ">
             <div class="welcome-text ">
-                <h2 class="welcome-title ">Контакти</h2>
+                <h2 class="welcome-title ">Contacts</h2>
             </div>
         </section>
         <footer class="footer ">
@@ -271,12 +356,10 @@
         </footer>
     </div>
 
-    <script>
-    </script>
-
     <!-- Подключаем плавное появление элементов AOS -->
-    
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+        <!-- Подключаем плавное появление элементов AOS -->
     <script src="js/index.js "></script>
 </body>
 
