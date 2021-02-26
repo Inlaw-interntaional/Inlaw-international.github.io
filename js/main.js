@@ -1,5 +1,57 @@
 // Шапка сайта - подключение
+if ($("#header")) {
+    jQuery.ajax({
+        url: "../header.html?3",
+        dataType: "html",
+        success: function(response) {
+            document.getElementById('header').innerHTML = response;
+        }
+    }).done(function() {
+        logo_animation_full();
+        anchors();
+    });
+};
 
+// LOGO animation
+function logo_animation_full() {
+
+    var logo_wrapper = document.getElementById("logo-wrapper"),
+        logo_title = document.getElementById("logo-title"),
+        logo_desc = document.getElementById("logo-desc");
+
+    function width_logo(item) {
+        item.style.width = '228px';
+    }
+
+    function pre_loader() {
+        logo_wrapper.style.height = '96px';
+
+        setTimeout(width_logo, 400, logo_title);
+        setTimeout(width_logo, 700, logo_desc);
+    }
+
+    window.onload = pre_loader;
+    $('.intro').imagesLoaded({
+            background: true
+        },
+        function() {
+            $('#background').css('display', 'block')
+        });
+
+    // <!-- Изменение шапки при скроле -->
+    let header = document.getElementsByClassName("header");
+
+
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 0) {
+            logo_wrapper.style.height = '75px';
+            $(".header").addClass("headermove");
+        } else {
+            logo_wrapper.style.height = '96px';
+            $(".header").removeClass("headermove");
+        }
+    });
+}
 
 
 // SLider Слайдер
