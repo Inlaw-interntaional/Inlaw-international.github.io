@@ -1,0 +1,22 @@
+danyaman {
+    color: blue;
+}
+
+.intro {
+    height: 158.4px;
+    background-image: none;
+    background-color: #38294c !important;
+}
+
+.header {
+    padding-top: 34px;
+}
+
+.info {
+    position: relative;
+    z-index: 1;
+    background-color: #150f1d;
+    &-usluga {
+        width: 100%;
+    }
+}
