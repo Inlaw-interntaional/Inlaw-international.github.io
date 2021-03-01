@@ -10,7 +10,7 @@ function logo_animation_full() {
         logo_desc = document.getElementById("logo-desc");
 
     function width_logo(item) {
-        item.style.width = '228px';
+        item.style.width = '216px';
     }
 
     function pre_loader() {
