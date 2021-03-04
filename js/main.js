@@ -9,7 +9,6 @@ if ($("#header")) {
     }).done(function() {
         setTimeout(logo_animation_full, 400);
         setTimeout(anchors, 400);
-        alert(3);
     });
 };
 
@@ -31,7 +30,7 @@ function logo_animation_full() {
         setTimeout(width_logo, 700, logo_desc);
     }
 
-    window.onload = pre_loader;
+    pre_loader();
     $('.intro').imagesLoaded({
             background: true
         },
