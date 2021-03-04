@@ -7,9 +7,8 @@ if ($("#header")) {
             document.getElementById('header').innerHTML = response;
         }
     }).done(function() {
-        setTimeout(logo_animation_full, 400);
-        setTimeout(anchors, 400);
-        alert(3);
+        logo_animation_full();
+        anchors();
     });
 };
 
@@ -99,10 +98,6 @@ $('.dropdown').click(function () {
 $('.dropdown').focusout(function () {
     $(this).removeClass('active');
     $(this).find('.dropdown-menu').slideUp(300);
-});
-$('.dropdown .dropdown-menu li').click(function () {
-    $(this).parents('.dropdown').find('span').text($(this).text());
-    $(this).parents('.dropdown').find('input').attr('value', $(this).attr('id'));
 });
 /*End Dropdown Menu*/
 
