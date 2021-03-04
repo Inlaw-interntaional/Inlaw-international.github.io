@@ -91,14 +91,10 @@ function anchors() {
 }
 
 $('.dropdown .select').click(function () {
-    $(".dropdown").attr('tabindex', 1).focus();
     $(".dropdown").toggleClass('active');
     $(".dropdown").find('.dropdown-menu').slideToggle(300);
 });
-$('.dropdown').focusout(function () {
-    $(this).removeClass('active');
-    $(this).find('.dropdown-menu').slideUp(300);
-});
+
 /*End Dropdown Menu*/
 
 
