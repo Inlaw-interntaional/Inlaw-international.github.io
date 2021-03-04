@@ -7,8 +7,8 @@ if ($("#header")) {
             document.getElementById('header').innerHTML = response;
         }
     }).done(function() {
-        logo_animation_full();
-        anchors();
+        setTimeout(logo_animation_full, 400);
+        setTimeout(anchors, 400);
     });
 };
 
