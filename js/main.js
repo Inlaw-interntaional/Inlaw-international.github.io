@@ -9,6 +9,7 @@ if ($("#header")) {
     }).done(function() {
         setTimeout(logo_animation_full, 400);
         setTimeout(anchors, 400);
+        alert(3);
     });
 };
 
