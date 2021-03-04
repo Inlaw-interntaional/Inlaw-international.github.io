@@ -554,11 +554,24 @@ span.choose {
     }
 }
 
+.copyrights {
+    text-align: center;
+    background-color: #031d33;
+    color: #fff;
+    z-index: 1;
+    position: relative;
+    p {
+        margin: 0;
+        padding: 8px 0;
+        font-family: "Open Sans", sans-serif;
+        letter-spacing: 1px;
+    }
+}
+
 .footer {
-    height: 150px;
     width: 100%;
     position: relative;
-    padding: 50px 0;
+    padding: 50px 0 0 0;
     @include overlay();
     &::after {
         content: "";
@@ -577,8 +590,8 @@ span.choose {
         z-index: 0;
     }
     .wrapper {
+        height: 150px;
         width: 60%;
-        height: 100%;
         margin: 0 auto;
         text-align: center;
         color: #fff;
