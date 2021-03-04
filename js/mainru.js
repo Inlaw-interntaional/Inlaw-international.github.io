@@ -30,7 +30,7 @@ function logo_animation_full() {
         setTimeout(width_logo, 700, logo_desc);
     }
 
-    window.onload = pre_loader;
+    pre_loader();
     $('.intro').imagesLoaded({
             background: true
         },
@@ -90,18 +90,9 @@ function anchors() {
     });
 }
 
-$('.dropdown').click(function () {
-    $(this).attr('tabindex', 1).focus();
-    $(this).toggleClass('active');
-    $(this).find('.dropdown-menu').slideToggle(300);
-});
-$('.dropdown').focusout(function () {
-    $(this).removeClass('active');
-    $(this).find('.dropdown-menu').slideUp(300);
-});
-$('.dropdown .dropdown-menu li').click(function () {
-    $(this).parents('.dropdown').find('span').text($(this).text());
-    $(this).parents('.dropdown').find('input').attr('value', $(this).attr('id'));
+$('.dropdown .select').click(function () {
+    $(".dropdown").toggleClass('active');
+    $(".dropdown").find('.dropdown-menu').slideToggle(300);
 });
 /*End Dropdown Menu*/
 
