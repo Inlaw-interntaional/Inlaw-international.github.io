@@ -36,19 +36,65 @@
             </div>
             <input type="hidden" name="gender">
             <ul class="dropdown-menu">
-                <a href="6uk-HR.html"><li id="male">UA</li></a>
-                <a href="6-HR.html"><li id="female">RU</li></a>
+                <a href="7-fintech.html"><li id="male">UA</li></a>
+                <a href="7ru-fintech.html"><li id="female">RU</li></a>
             </ul>
         </div>
     </div>
     <section class="intro">
         <div class="overlay"></div>
     </section>
-    <section class="info">
-        <img class="info-usluga" src="../img/INLAW.ENG-16.jpg" alt="" srcset="">
-        <img class="info-usluga" src="../img/INLAW.ENG-17.jpg" alt="" srcset="">
-        <img class="info-usluga" src="../img/INLAW.ENG-18.jpg" alt="" srcset="">
+    <section class="info infoflex">
+        <p class="accordion"> Asset Management</p>
+        <div class="panel">
+        <p>Anyone planning to manage third party assets in a professional way, to maintain third party investment accounts or to administrate funds with a view to assuring maximum efficient use of the property and resources by investors will definitely need assistance with obtaining an asset management license.</p>
+        <p class="special-design">n the securities market, one may invest free cash on one’s own or with the help of intermediaries. Where the second option is chosen, there is no need to keep track of the securities market and worry about the efficiency of investment decisions by passing on this task, partially or completely, to licensed managers.</p>
+        <p>The asset management license certifies the licensee’s right to asset management activities for a specified period of time, subject to licensing conditions. Our team is happy to give proficient advice concerning the license issue.</p>
+        <p>SBSB experts offer full-service support with projects involving creation of managing companies and investment managers, including establishment and licensing of companies, jurisdiction selection, follow-up on the operations, and much more.</p>
+        </div>
+
+        <p class="accordion"> Brokerage (Forex) Licenses</p>
+        <div class="panel">
+        <p>Have you decided to create a Forex broker or a dealing center, or set up an investment company? Let us be your advisor on those matters.</p>
+        <p class="special-design">We will help you choose and obtain the Forex license, regardless of the country where you intend to operate. To get the license, one needs to decide on the jurisdiction first, register their company in the selected country and then apply for a bank account with the license.</p>
+         <p>SBSB lawyers have hands-on experience of the Forex market in CIS and EU countries, and are willing to share their knowledge with you. Our solutions are always custom-made, with the applicable laws, budgeting, country of residency and other specifics taken into account.</p>
+    </div>
+
+        <p class="accordion">Investment Funds</p>
+        <div class="panel">
+        <p>An investment fund is a flexible efficient instrument tailored to collective investments in financial and non-financial assets.</p>
+        <p class="special-design">The term «assets» may include securities, bonds, shares, real estate, corporate shares in other companies etc. With many countries eager to create a friendly investment environment and raise investor funds, there is a great variety of investment funds. That said, choosing a country or fund type may prove to be a challenging task. </p>
+        <p>The experts at SBSB have vast experience in creating and maintaining investment funds both offshore (Cayman Islands, the Bahamas, BVI etc.) and in Europe (Malta, Cyprus, Luxembourg, Lichtenstein and others).</p>
+        <p>Having reviewed the specifics of your fund project, we will select the most suitable jurisdiction for the registration, give advice on all relevant aspects, prepare all documents required for the registration and licensing, make arrangements for and participate in all important meetings with the competent authorities and also represent your interests with the state agencies throughout the project implementation.</p>
+        </div>
+
+        <p class="accordion">Crowdfunding</p>
+        <div class="panel">
+        <p>Crowdfunding, or public project funding, has become a global trend in what concerns investment raising for startups. One of the reasons of crowdfunding popularity is that there is no demanding lender, such as banks, which could seize the owner’s property any time if the loan repayment is delayed.</p>
+        <p class="special-design">Such crowdfunding platforms as Kickstarter, Indiegogo and Boomstarter are known to many people today. However, considering the growing number of startups, money raising is no longer the only appealing idea; another one is creating one’s own crowdfunding platform
+that could bring in a fee revenue amounting to 3-5% of the funds collected for startups.</p>
+        <p>As is the case with investment activities, crowdfunding platforms are subject to legislative regulation, so the first thing one needs to do is solicit qualified legal support. Our team is there to offer a set of turnkey solutions designed to create an international crowdfunding platform.</p>
+        <p>The approach proposed by SBSB consists in end-to-end investment project servicing, covering the selection of the foreign jurisdiction for company establishment, preparation of crowdfunding licensing documents, ongoing legal support and ultimately the full-fledged project launch.</p>
+
+    </div>
+        
     </section>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
     <div id="footer">
     </div>
     <!-- Подключаем плавное появление элементов AOS -->
