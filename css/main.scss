@@ -147,6 +147,7 @@ a:focus {
                 color: #ececec;
                 line-height: 11px;
                 font-weight: 500;
+                font-size: 14.3px;
                 &:last-of-type {
                     padding-bottom: 2px;
                 }
@@ -244,6 +245,7 @@ a:focus {
                 text-align: center;
                 margin-top: 10px;
                 font-weight: 400;
+                padding: 0 5px;
             }
             &-desc {
                 font-size: 14px;
@@ -613,6 +615,60 @@ span.choose {
                 height: 20px;
                 margin-right: 5px;
             }
+        }
+    }
+}
+
+body .infoflex {
+    background-color: transparent;
+}
+// fintech
+.accordion {
+    font-family: "Open Sans", sans-serif;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    padding: 18px;
+    padding-left: 8%;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.3vw;
+    font-weight: 500;
+    transition: 0.5s background-color;
+    transition-timing-function: ease;
+    border-top: 1px solid #efeded;
+    margin: 0;
+    &.active {
+        background-color: #004695;
+        color: #fff;
+    }
+    p {
+        margin: 0;
+        padding: 0;
+    }
+    &:hover {
+        background-color: #004695;
+        color: #fff;
+    }
+  }
+  .panel {
+    font-family: "Open Sans", sans-serif;
+    padding: 0 18px;
+    background-color: #f8f8f8;
+    color: #444;
+    font-weight: 600;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    p {
+        margin: 0;
+        padding: 20px;
+        font-weight: 500;
+        &.special-design {
+            background-color: #fff;
+            border-left: 4px solid #004695;
         }
     }
 }

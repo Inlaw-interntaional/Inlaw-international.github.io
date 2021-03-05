@@ -118,6 +118,7 @@ a:focus {
   color: #ececec;
   line-height: 11px;
   font-weight: 500;
+  font-size: 14.3px;
 }
 
 .header .wrapper .logo-desc:last-of-type {
@@ -238,6 +239,7 @@ a:focus {
   text-align: center;
   margin-top: 10px;
   font-weight: 400;
+  padding: 0 5px;
 }
 
 .poslugi .areas_block_itm-desc {
@@ -671,6 +673,66 @@ span.choose {
   width: 20px;
   height: 20px;
   margin-right: 5px;
+}
+
+body .infoflex {
+  background-color: transparent;
+}
+
+.accordion {
+  font-family: "Open Sans", sans-serif;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  padding: 18px;
+  padding-left: 8%;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.3vw;
+  font-weight: 500;
+  transition: 0.5s background-color;
+  transition-timing-function: ease;
+  border-top: 1px solid #efeded;
+  margin: 0;
+}
+
+.accordion.active {
+  background-color: #004695;
+  color: #fff;
+}
+
+.accordion p {
+  margin: 0;
+  padding: 0;
+}
+
+.accordion:hover {
+  background-color: #004695;
+  color: #fff;
+}
+
+.panel {
+  font-family: "Open Sans", sans-serif;
+  padding: 0 18px;
+  background-color: #f8f8f8;
+  color: #444;
+  font-weight: 600;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel p {
+  margin: 0;
+  padding: 20px;
+  font-weight: 500;
+}
+
+.panel p.special-design {
+  background-color: #fff;
+  border-left: 4px solid #004695;
 }
 
 @media (max-width: 500px) {
