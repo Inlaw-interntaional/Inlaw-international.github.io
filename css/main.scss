@@ -399,6 +399,7 @@ span.choose {
                 transition: all 0.3s;
                 margin: 0 auto;
                 margin-top: 36px;
+                display: none;
                 &:hover {
                     color: #fff;
                     background-color: #000;
@@ -621,5 +622,22 @@ span.choose {
         &-title {
             font-size: 27px;
         }
+    }
+}
+
+@media (max-width:767px) {
+    .welcome .wrapper .wrap_info {
+        width: 100%;
+        background-color: transparent;
+    }
+    .welcome .wrapper .slider .slick-list .slick-track .slider_item img {
+        width: initial;
+        height: 100%;
+    }
+    .welcome .wrapper .wrap_info .wel_inf-title {
+        color: #fff;
+    }
+    .welcome .wrapper .wrap_info .wel_inf-txt p {
+        color: #fff;
     }
 }
