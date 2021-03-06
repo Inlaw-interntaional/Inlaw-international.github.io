@@ -112,3 +112,13 @@ jQuery.ajax({
         document.getElementById('footer').innerHTML = response;
     }
 });
+
+$( document ).ready(function(){
+    $( ".mobile-but-hed,.header-links-item" ).click(function(){ // задаем функцию при нажатиии на элемент с классом toggle
+        $( ".header-links" ).slideToggle(); //  скрываем, или отображаем все элементы <div>
+        $(".dropdown-menu").slideUp();
+    });
+    $(".fixed-dropdown").click(function() {
+        $(".header-links").slideUp();
+    })
+});

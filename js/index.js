@@ -90,7 +90,18 @@ $('.msg').html(msg + input + '</span>');
 // Paralax
 // Paralax 
 $(document).ready(function() {
-    var c1 = new Rellax('.intro', {
+    var c1 = new Rellax('.intro-main', {
         speed: -6
     });
 });
+
+$( document ).ready(function(){
+    $( ".mobile-but-hed,.header-links-item" ).click(function(){ // задаем функцию при нажатиии на элемент с классом toggle
+        $( ".header-links" ).slideToggle(); //  скрываем, или отображаем все элементы <div>
+        $(".dropdown-menu").slideUp();
+    });
+    $(".fixed-dropdown").click(function() {
+        $(".header-links").slideUp();
+    })
+});
+// mobile menu 
