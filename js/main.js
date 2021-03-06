@@ -9,6 +9,7 @@ if ($("#header")) {
     }).done(function() {
         logo_animation_full();
         anchors();
+        mobile_menu_ok();
     });
 };
 
@@ -113,7 +114,7 @@ jQuery.ajax({
     }
 });
 
-$( document ).ready(function(){
+function mobile_menu_ok () {
     $( ".mobile-but-hed,.header-links-item" ).click(function(){ // задаем функцию при нажатиии на элемент с классом toggle
         $( ".header-links" ).slideToggle(); //  скрываем, или отображаем все элементы <div>
         $(".dropdown-menu").slideUp();
@@ -121,4 +122,4 @@ $( document ).ready(function(){
     $(".fixed-dropdown").click(function() {
         $(".header-links").slideUp();
     })
-});
+}
