@@ -6,6 +6,7 @@ danyaman {
     height: 158.4px;
     background-image: none;
     background-color: #38294c !important;
+    @include overlay();
 }
 
 .header {
