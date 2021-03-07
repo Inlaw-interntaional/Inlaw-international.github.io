@@ -666,7 +666,7 @@ span.choose {
 
 .contact-us .welcome-title {
   border-top: 10px solid #F1F1F1;
-  padding-top: 0;
+  padding: 30px;
 }
 
 .contact-us .welcome-desc {
@@ -869,9 +869,6 @@ body .infoflex {
   }
   .poslugi {
     padding-bottom: 0;
-  }
-  .contact-us .welcome-title {
-    padding: 30px;
   }
 }
 
