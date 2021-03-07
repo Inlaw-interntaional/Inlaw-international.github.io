@@ -35,6 +35,6 @@
   width: 100%;
 }
 
-.footer .wrapper:last-of-type {
+.footer .wrapper:nth-of-type(3) {
   padding-bottom: 40px;
 }
