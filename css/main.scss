@@ -267,7 +267,7 @@ a:focus {
                         background-image: url(../img/p1.jpg);
                     }
                     &2 {
-                        background-image: url(../img/p2.jpg);
+                        background-image: url(../img/p22.jpg);
                     }
                     &3 {
                         background-image: url(../img/p3.jpg);
@@ -279,7 +279,7 @@ a:focus {
                         background-image: url(../img/p5.jpg);
                     }
                     &6 {
-                        background-image: url(../img/p6.jpg);
+                        background-image: url(../img/p66.jpg);
                     }
                     &7 {
                         background-image: url(../img/p7.jpg);
@@ -712,7 +712,7 @@ span.choose {
         align-items: center;
         flex-wrap: wrap;
         &:last-of-type {
-            margin-bottom: 40px;
+            padding-bottom: 40px;
         }
         p {
             display: flex;

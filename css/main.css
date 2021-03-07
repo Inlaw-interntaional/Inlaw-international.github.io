@@ -267,7 +267,7 @@ a:focus {
 }
 
 .poslugi .areas_block_itm-img.p2 {
-  background-image: url(../img/p2.jpg);
+  background-image: url(../img/p22.jpg);
 }
 
 .poslugi .areas_block_itm-img.p3 {
@@ -283,7 +283,7 @@ a:focus {
 }
 
 .poslugi .areas_block_itm-img.p6 {
-  background-image: url(../img/p6.jpg);
+  background-image: url(../img/p66.jpg);
 }
 
 .poslugi .areas_block_itm-img.p7 {
@@ -782,7 +782,7 @@ span.choose {
 }
 
 .footer .wrapper:last-of-type {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .footer .wrapper p {
