@@ -34,3 +34,7 @@
 .info-usluga {
   width: 100%;
 }
+
+.footer .wrapper:last-of-type {
+  padding-bottom: 40px;
+}
