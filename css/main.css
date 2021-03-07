@@ -497,6 +497,7 @@ span.choose {
   color: black;
   text-align: center;
   margin-top: 132px;
+  font-family: Montserrat, sans-serif;
 }
 
 .welcome .wrapper .wrap_info .wel_inf-txt {
@@ -505,6 +506,7 @@ span.choose {
 }
 
 .welcome .wrapper .wrap_info .wel_inf-txt p {
+  font-family: Montserrat, sans-serif;
   color: #000;
 }
 
@@ -699,6 +701,7 @@ span.choose {
   border-top: 10px solid #F1F1F1;
   padding: 30px;
   font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
 }
 
 .contact-us .welcome-desc {

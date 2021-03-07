@@ -474,11 +474,13 @@ span.choose {
                 color: rgb(0, 0, 0);
                 text-align: center;
                 margin-top: 132px;
+                font-family: Montserrat, sans-serif;
             }
             .wel_inf-txt {
                 width: 90%;
                 margin: 37px auto 0;
                 p {
+                    font-family: Montserrat, sans-serif;
                     color: #000;
                 }
             }
@@ -648,6 +650,7 @@ span.choose {
             border-top: 10px solid #F1F1F1;
             padding: 30px;
             font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
         }
         &-desc {
             font-weight: 100;
