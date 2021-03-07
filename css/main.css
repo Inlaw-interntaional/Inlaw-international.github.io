@@ -733,7 +733,7 @@ span.choose {
 .footer {
   width: 100%;
   position: relative;
-  padding: 50px 0;
+  padding: 50px 0 0 0;
 }
 
 .footer .overlay {
@@ -779,6 +779,10 @@ span.choose {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.footer .wrapper:last-of-type {
+  margin-bottom: 40px;
 }
 
 .footer .wrapper p {
