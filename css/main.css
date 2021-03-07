@@ -463,7 +463,7 @@ span.choose {
 
 .welcome-title {
   font-size: 2vw;
-  font-weight: 600;
+  font-weight: 500;
   margin: 0;
   padding: 40px 0;
 }
@@ -910,6 +910,9 @@ body .infoflex {
   }
   .poslugi {
     padding-bottom: 0;
+  }
+  .accordion {
+    font-size: 4.3vw;
   }
 }
 
