@@ -2,6 +2,7 @@
   height: 158.4px;
   background-image: none;
   background-color: #38294c !important;
+  position: relative;
 }
 
 .intro .overlay {
@@ -14,6 +15,10 @@
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+
+.intro .overlay {
+  z-index: 0;
 }
 
 .header {

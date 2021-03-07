@@ -17,6 +17,10 @@
     background-image: none;
     background-color: #38294c !important;
     @include overlay();
+    position: relative;
+    .overlay {
+        z-index: 0;
+    }
 }
 
 .header {
