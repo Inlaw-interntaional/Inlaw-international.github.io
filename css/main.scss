@@ -297,13 +297,23 @@ a:focus {
                 }
             }
             &:hover .areas_block_itm-over {
-                display: block;
+                @media (min-width:769px) {
+                    display: block;
                 top: 0;
                 left: 0;
                 position: absolute;
                 background: rgba(82, 154, 213, 0.75) url(../img/icons/plus_icon.png) no-repeat center center;
                 width: 100%;
                 height: 100%;
+                &.inwork,.inwork:focus,.inwork:active {
+                    background-image: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.6vw;
+                    color:#fff;
+                }
+                }
             }
             &-title {
                 color: #222;
@@ -323,6 +333,24 @@ a:focus {
                 padding: 0 5px;
             }
         }
+    }
+}
+
+@media (max-width:769px) {
+    .poslugi .areas_block_itm:hover .areas_block_itm-over.inwork, .poslugi .areas_block_itm:hover .areas_block_itm-over .inwork:focus, .poslugi .areas_block_itm:hover .areas_block_itm-over .inwork:active {
+        display: block;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: rgba(82, 154, 213, 0.75) url(../img/icons/plus_icon.png) no-repeat center center;
+        width: 100%;
+        height: 100%;
+        font-size: 7vw;
+        background-image: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:#fff;
     }
 }
 
@@ -629,7 +657,6 @@ span.choose {
     color: #fff;
     z-index: 1;
     position: relative;
-    margin-top: 15px;
     p {
         margin: 0;
         padding: 8px 0;
@@ -638,10 +665,23 @@ span.choose {
     }
 }
 
+.pop-up {
+    position: fixed;
+    top: 40px;
+    right: 5px;
+    padding: 5px 10px;
+    background-color: #469fdf;
+    color: #fff;
+    opacity: 0.9;
+    z-index: 10005;
+    font-size: 1.3vw;
+    font-family: $logotitle;
+    display: none;
+}
 .footer {
     width: 100%;
     position: relative;
-    padding: 50px 0 0 0;
+    padding: 50px 0;
     @include overlay();
     &::after {
         content: "";

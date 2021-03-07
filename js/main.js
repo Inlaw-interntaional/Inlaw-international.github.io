@@ -115,11 +115,15 @@ jQuery.ajax({
 });
 
 function mobile_menu_ok () {
-    $( ".mobile-but-hed,.header-links-item" ).click(function(){ // задаем функцию при нажатиии на элемент с классом toggle
-        $( ".header-links" ).slideToggle(); //  скрываем, или отображаем все элементы <div>
-        $(".dropdown-menu").slideUp();
-    });
-    $(".fixed-dropdown").click(function() {
-        $(".header-links").slideUp();
-    })
+    if (screen.width < 769) {
+        $( document ).ready(function(){
+            $( ".mobile-but-hed,.header-links-item" ).click(function(){ // задаем функцию при нажатиии на элемент с классом toggle
+                $( ".header-links" ).slideToggle(); //  скрываем, или отображаем все элементы <div>
+                $(".dropdown-menu").slideUp();
+            });
+            $(".fixed-dropdown").click(function() {
+                $(".header-links").slideUp();
+            })
+        });
+    }
 }
