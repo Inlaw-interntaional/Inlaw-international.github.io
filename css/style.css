@@ -1,3 +1,3 @@
 @charset "UTF-8";
-@import url(main.css);
-@import url(content.css);
+@import url(main.css?2);
+@import url(content.css?2);
